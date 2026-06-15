@@ -330,18 +330,6 @@ Client → Express (app.ts)
 
 ---
 
-## Assignment Deliverables
-
-| Part | Marks | Location |
-|------|-------|----------|
-| A — Backend APIs | 40 | `src/services/`, `src/controllers/`, `src/routes/` |
-| B — SQL Challenge | 20 | `docs/sql-challenge.md`, `database/schema.sql` |
-| C — Debugging | 15 | `docs/debugging-challenge.md` |
-| D — AI Development | 15 | `docs/ai-development-log.md` |
-| E — Performance & Design | 10 | `docs/performance-design.md` |
-
----
-
 ## CI/CD — GitHub Actions + AWS ECS
 
 | Workflow | Trigger | Action |
