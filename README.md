@@ -138,7 +138,7 @@ In Swagger UI: click **Authorize** → enter `Bearer <token>`
 | `POST` | `/api/v1/auth/register` | No | Register new user |
 | `GET` | `/api/v1/auth/me` | Yes | Current user profile |
 | `POST` | `/api/v1/transactions` | Yes | Create DEBIT/CREDIT transaction (sync) |
-| `POST` | `/api/v1/transactions/async` | Yes | **Bonus** — Queue via RabbitMQ (202) |
+| `POST` | `/api/v1/transactions/async` | Yes | **Other** — Queue via RabbitMQ (202) |
 | `GET` | `/api/v1/transactions` | Yes | List with pagination, filter, sort |
 | `GET` | `/api/v1/accounts/:accountId/summary` | Yes | Account balance summary |
 | `GET` | `/api/v1/health` | No | Health check |
@@ -263,7 +263,7 @@ SEED_FORCE=true npm run db:setup
 
 ---
 
-## Bonus — Queue & Event Bus (RabbitMQ)
+## Queue & Event Bus (RabbitMQ)
 
 ```
 Transaction API → Queue → Worker → Event Bus → Consumer Services
@@ -278,7 +278,7 @@ Transaction API → Queue → Worker → Event Bus → Consumer Services
 
 RabbitMQ UI: http://localhost:15672 (guest / guest)
 
-Full details: [docs/bonus-architecture.md](docs/bonus-architecture.md)
+Full details: [docs/architecture.md](docs/architecture.md)
 
 ---
 

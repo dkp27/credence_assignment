@@ -1,8 +1,8 @@
-# Bonus Architecture — Queue & Event Bus
+# Architecture — Queue & Event Bus
 
 ## Overview
 
-Implements the assignment bonus flow:
+Implements the assignment flow:
 
 ```
 Transaction API  →  Queue (RabbitMQ)  →  Worker  →  Event Bus  →  Consumer Services
